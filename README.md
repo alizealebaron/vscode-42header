@@ -1,57 +1,51 @@
-<img
-  src="https://raw.githubusercontent.com/kube/vscode-42header/master/42.png" 
-  width=128>
+<p align="center">
+  <img src="https://github.com/alizealebaron/alizealebaron/blob/main/assets/42header.png" width="120"/>
+</p>
+<h3 align="center">
+  <em>Un header parfait comprend à minima un canard</em>
+</h3>
 
-> **Searching for Maintainer.**
-> 
-> This project was done 7 years ago, which is an eternity relative to VSCode Lifespan.
-> I don't have time to maintain this, but I see a lot of people doing Pull Requests for it, or creating issues.
-> 
-> As there are no Unit Tests and no CI/CD, it makes it even harder to check for issues and PRs.
+---
+
+## ⚠️ Avant propos
+
+> **⚠️ Ce projet n'a pas été crée par moi**
 >
-> What I'd like to do is to give ownership to an "official" 42 organization on GitHub, where a group of students could maintain and update this project themselves.
+> Cette extension est un **double** de l'original [vscode-42header by kube](https://githubcom/kube/vscode-42header).
 >
-> If you are interested in such a thing, please ping me.
 
-# 42 Header for VSCode
-
-This extension provides the 42 header integration in VS Code.
+## 🦆 42header
 
 ```bash
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    vscode-42header                                    :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: kube <hello@kube.io>                       +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2013/11/18 13:37:42 by kube              #+#    #+#              #
-#    Updated: 2016/09/18 13:11:04 by kube             ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+******************************************************************************
+*       _  _     ____                    ,~~.                                *
+*      | || |   |___ \              ,   (  ^ )>                              *
+*      | || |_    __) |             )\~~'   (       _      _      _          *
+*      |__   _|  / __/             (  .__)   )    >(.)__ <(^)__ =(o)__       *
+*         |_|   |_____| .fr         \_.____,*      (___/  (___/  (___/       *
+*                                                                            *
+******************************************************************************
+* @name   : vs-code_duck-header                                              *
+* @author : alebaron                                                         *
+*                                                                            *
+* @creation : 2013/11/18 13:37:42 by kube                                    *
+* @update   : 2026/02/03 14:33:42 by alebaron                                *
+******************************************************************************
 ```
 
-## Install
+## 💻 Usage
 
-Launch Quick Open with <kbd>⌘</kbd>+<kbd>P</kbd> and enter
-```
-ext install 42header
-```
-
-## Usage
-
-### Insert a header
+### Insertion du header
  - **macOS** : <kbd>⌘</kbd> + <kbd>⌥</kbd> + <kbd>H</kbd>
  - **Linux** / **Windows** : <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>H</kbd>.
 
-Header is automatically updated on save.
+Ce header ce met automatiquement à jour à chaque sauvegarde.
 
+## 📜 Configuration
 
-## Configuration
+Les valeurs par défaut pour **username** et **email** sont importées depuis les variables d’environnement.
 
-Default values for **username** and **email** are imported from environment variables.
-
-To override these values, specify these properties in *User Settings* :
+Pour remplacer ces valeurs, spécifiez ces propriétés dans les *paramètres utilisateur*.
 
 ```ts
 {
@@ -59,12 +53,3 @@ To override these values, specify these properties in *User Settings* :
   "42header.email": string
 }
 ```
-
-
-## Issues
-
-In case of a bug, or missing feature, please create a [Github Pull Request](https://github.com/kube/vscode-42header/pulls).
-
-## License
-
-MIT
