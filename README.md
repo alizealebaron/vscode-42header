@@ -9,7 +9,7 @@
 
 ## ⚠️ Avant propos
 
-> **⚠️ Ce projet n'a pas été crée par moi**
+> **Ce projet n'a pas été crée par moi**
 >
 > Cette extension est un **double** de l'original [vscode-42header by kube](https://githubcom/kube/vscode-42header).
 >
