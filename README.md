@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/alizealebaron/alizealebaron/blob/main/assets/42header.png" width="120"/>
+  <img src="https://raw.githubusercontent.com/kube/vscode-42header/master/42.png" width="120"/>
 </p>
 <h3 align="center">
   <em>Un header parfait comprend à minima un canard</em>
