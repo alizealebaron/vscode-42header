@@ -25,11 +25,11 @@ export type HeaderInfo = {
  */
 const genericTemplate = `
 ******************************************************************************
-*       _  _     ____                    ,~~.                                *
-*      | || |   |___ \              ,   (  ^ )>                              *
-*      | || |_    __) |             )\~~'   (       _      _      _          *
+*       _  _     ____                     ,~~.                               *
+*      | || |   |___  \\             ,   (  ^ )>                              *
+*      | || |_    __) |             )\\~~'   (       _      _      _          *
 *      |__   _|  / __/             (  .__)   )    >(.)__ <(^)__ =(o)__       *
-*         |_|   |_____| .fr         \_.____,*      (___/  (___/  (___/       *
+*         |_|   |_____| .fr         \\_.____,*      (___/  (___/  (___/       *
 *                                                                            *
 ******************************************************************************
 * @name   : $FILENAME___________________________________________________     *
@@ -38,7 +38,7 @@ const genericTemplate = `
 * @creation : $CREATEDAT_________ by $CREATEDBY_                             *
 * @update   : $UPDATEDAT_________ by $UPDATEDBY_                             *
 ******************************************************************************
-`.substring(1)
+\n`.substring(1)
 
 /**
  * Get specific header template for languageId
@@ -81,10 +81,12 @@ export const supportsLanguage = (languageId: string) =>
  * Returns current header text if present at top of document
  */
 export const extractHeader = (text: string): string | null => {
-  const headerRegex = `^(.{80}(\r\n|\n)){10}`
-  const match = text.match(headerRegex)
-
-  return match ? match[0].split('\r\n').join('\n') : null
+  const lines = text.split(/\r?\n/);
+  
+  if (lines.length >= 14 && lines[0].includes('***')) {
+    return lines.slice(0, 14).join('\n');
+  }
+  return null;
 }
 
 /**
